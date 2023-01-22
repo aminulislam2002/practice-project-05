@@ -5,8 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice Project</title>
+
+    <!-- Tailwind js file  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google font file  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome file -->
+    <script src="https://kit.fontawesome.com/055a897ddb.js" crossorigin="anonymous"></script>
+
+    <!-- Custom css -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#1C1C1C",
+              semidark: "#777777",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
+    <!-- Header section -->
+    <header class="container mx-auto px-16 lg:px-36 pt-16 lg:flex gap-2 mb-48">
+      <!-- Banner title section  -->
+      <div class="">
+        <div>
+          <h1 class="font-manrope text-7xl">
+            It's good <br />
+            tea time at The <br />
+            Tea House
+          </h1>
+          <p class="font-manrope text-lg my-4">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+          </p>
+          <button class="bg-gradient-to-r from-orange-400 via-orange-600 to-red-600 py-2 px-5 text-white rounded-md">
+            Explore More
+          </button>
+        </div>
+      </div>
+      <!-- Banner img section  -->
+      <div class="">
+        <div>
+          <div class="z-10">
+            <img src="./images/banner.png" alt="" />
+          </div>
+          <div class="bg-white h-auto w-1/2 flex justify-center items-center gap-2 -mt-32 relative z-20">
+            <div>
+              <img class="h-7" src="./images/icon/star-solid.svg" alt="" />
+            </div>
+            <div>
+              <p class="text-3xl font-semibold">5.0</p>
+              <h3 class="font-manrope">Trust Pilot Ratings</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
+    <!-- main section  -->
+
+    <main>
+      <!-- Featured section -->
+      <section class="container mx-auto px-16 lg:px-32 mb-28">
+        <div class="flex justify-center mb-5">
+          <div class="text-center w-5/6">
+            <h1 class="text-5xl font-bold mb-5">Our Featured Products</h1>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+              some form, by injected humour, or randomised words which don't look even slightly believable.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="mx-auto bg-slate-100 text-center p-5">
+            <img class="mx-auto" src="./images/tea-1.png" alt="" />
+            <h2 class="text-2xl font-manrope font-semibold">Milk Tea</h2>
+            <p class="text-sm font-manrope">Creamer could be replaced by fresh milk</p>
+          </div>
+          <div class="mx-auto bg-slate-100 text-center p-5">
+            <img class="mx-auto" src="./images/tea-2.png" alt="" />
+            <h2 class="text-2xl font-manrope font-semibold">Milk Tea</h2>
+            <p class="text-sm font-manrope">Creamer could be replaced by fresh milk</p>
+          </div>
+          <div class="mx-auto bg-slate-100 text-center p-5">
+            <img class="mx-auto" src="./images/tea-3.png" alt="" />
+            <h2 class="text-2xl font-manrope font-semibold">Milk Tea</h2>
+            <p class="text-sm font-manrope">Creamer could be replaced by fresh milk</p>
+          </div>
+          <div class="mx-auto bg-slate-100 text-center p-5">
+            <img class="mx-auto" src="./images/tea-4.png" alt="" />
+            <h2 class="text-2xl font-manrope font-semibold">Milk Tea</h2>
+            <p class="text-sm font-manrope">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
